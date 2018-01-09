@@ -291,7 +291,16 @@ img {
 </style>
 </head>
 <body>
-<h2>XDataETL安装</h2>
+<h2>XDataETL下载</h2>
+<h3>查看本地maven库路径</h3>
+<img src="https://raw.githubusercontent.com/baozouxiaoshou/XDataETL/master/image/3.png" width = "500" height = "320" alt="图1" />
+<h3>将依赖下载相应的路径下</h3>
+<img src="https://raw.githubusercontent.com/baozouxiaoshou/XDataETL/master/image/4.png" width = "500" height = "320" alt="图1" />
+<h3>两种下载方式</h3>
+<p>1、在此目录下右键命令窗口 --&gt; 执行  <br/><strong>git clone https://github.com/baozouxiaoshou/XDataETL/tree/master/xDataETL</strong>
+<br/>2、如果本地未安装git，则下载zip文甲，解压到相应的路径下<br/>
+下载地址<a href="https://raw.githubusercontent.com/baozouxiaoshou/XDataETL/master/xDataETL.zip" title="XDataETL依赖下载地址">https://raw.githubusercontent.com/baozouxiaoshou/XDataETL/master/xDataETL.zip</a></p>
+<h2>XDataETL配置项目环境中</h2>
 <h3>maven项目</h3>
 <pre>
 pom.xml文件中添加引用
@@ -318,23 +327,17 @@ pom.xml文件中添加引用
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        catch (DBServiceException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        catch (DBConnectionException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
 </code>
 </pre>
 <h3>注意事项</h3>
 <pre style="font-size:14px">
 1、maven引用包是否冲突，根据控制台提示查看相关的包。（图1）
-<img src="https://github.com/baozouxiaoshou/XDataETL/blob/master/image/1.png" width = "500" height = "320" alt="图1" />
+<img src="https://raw.githubusercontent.com/baozouxiaoshou/XDataETL/master/image/1.png" width = "500" height = "320" alt="图1" />
 2、引入jar包之后启动tomcat包类找不到，clean一下tomcat（图2）
-<img src="https://github.com/baozouxiaoshou/XDataETL/blob/master/image/2.png" width = "500" height = "120" alt="图1" />
+<img src="https://raw.githubusercontent.com/baozouxiaoshou/XDataETL/master/image/2.png" width = "500" height = "120" alt="图1" />
 </pre>
+<p>3、tomcat版本Tomcat8主选，虚拟机jdk1.8主选</p>
+
 </body>
 </html>
 <!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
